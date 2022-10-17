@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*
+ * Configurações Padrões
+ */
+
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/*
+ * Cabeçalho
+ */
+
+nav {
+    max-width: 1440px;
+    min-width: 1280px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 32px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: var(--medium);
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.espacamento {
+    width: 142px;
+    height: 32px;
+}
+
+.botoes button {
+    border: none;
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--medium);
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background-color: #d8d8d8;
+    transition: .4s;
+}
+
+button.cadastro {
+    background-color: var(--main-color);
+    color: white;
+}
+
+button.cadastro:hover {
+    background-color: #6e1919;
+}
+
+/*
+ * Seção Sobre nós
+ */
+
+#sobre-nos {
+    display: flex;
+    flex-direction: column;
+    padding: 96px;
+    gap: 24px;
+    text-align: center;
+    align-items: center;
+}
+
+.titulo-secao {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: var(--semibold);
+    line-height: 24px;
+}
+
+#sobre-nos h3 {
+    font-size: 48px;
+    font-weight: var(--semibold);
+    line-height: 60px;
+}
+
+#sobre-nos p {
+    width: 791px;
+    color: var(--text-color);
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: var(--regular);
+}
+
+/*
+ * Seção Métricas
+ */
+
+#metricas {
+    display: flex;
+    padding-bottom: 96px;
+    padding-right: 32px;
+    padding-left: 32px;
+    width: 1280px;
+    gap: 32px;
+    margin: auto;
+    justify-content: center;
+}
+
+#metricas .metrica {
+    width: 280px;
+}
+
+#metricas .metrica h2 {
+    color: var(--main-color);
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: var(--semibold);
+    margin-bottom: 12px;
+}
+
+#metricas .metrica h3 {
+    font-size: 18px;
+    font-weight: var(--medium);
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+#metricas .metrica p {
+    font-size: 16px;
+    font-weight: var(--regular);
+    color: var(--text-color);
+    line-height: 24px;
+}
+
+/*
+ * Seção Vagas Abertas
+ */
+
+#vagas-abertas {
+    display: flex;
+    flex-direction: column;
+    padding: 96px 0px;
+    gap: 64px;
+}
+
+#talentos {
+    padding: 32px;
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#talentos h2 {
+    margin-bottom: 16px;
+}
+
+#talentos h3 {
+    font-size: 36px;
+    font-weight: var(--semibold);
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+#talentos p {
+    font-size: 20px;
+    font-weight: var(--regular);
+    line-height: 30px;
+    color: var(--text-color);
+}
+
+#vagas-abertas img {
+    align-self: center;
+}
+
+#vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin: auto;
+    width: 768px;
+
+}
+
+#vagas .categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#vagas .categoria .vagas-disponiveis {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#vagas .categoria .vagas-disponiveis .vaga {
+    padding: 24px 24px 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+#vagas > .categoria > h2 {
+    font-size: 20px;
+    font-weight: var(--medium);
+    line-height: 30px;
+}
+
+#vagas .categoria .vagas-disponiveis .vaga h2 {
+    font-size: 18px;
+    font-weight: var(--medium);
+    line-height: 28px;
+}
+
+
+#vagas .categoria .vagas-disponiveis .vaga p {
+    display: flex;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: var(--medium);
+    line-height: 24px;
+    color: var(--text-color);
+}
+
+
+#vagas .categoria .vagas-disponiveis .vaga:hover {
+    cursor: pointer;
+    background-image: linear-gradient(173deg, rgb(255, 255, 255), rgb(212, 212, 212));
+    border: 1px solid rgb(221, 221, 221);
+    transition: .3s;
+}
+
+/*
+ * Seção colaboradores
+ */
+
+#colaboradores {
+    padding: 64px 96px 128px 64px;
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+#colaboradores .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#colaboradores .texto h3 {
+    font-size: 36px;
+    font-weight: var(--medium);
+    line-height: 44px;   
+}
+
+#colaboradores .autor {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+#colaboradores .autor .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#colaboradores .autor .informacoes h2 {
+    font-size: 16px;
+    font-weight: var(--medium);
+    line-height: 24px;
+}
+
+#colaboradores .autor .informacoes p {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: var(--regular);
+}
+
+/*
+ * Seção Acompanhe nossas novas oportunidades
+ */
+
+
+#oportunidades {
+    padding: 96px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+
+#acompanhe {
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.texto-acompanhe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-acompanhe h2{
+    font-size: 36px;
+    font-weight: var(--semibold);
+    line-height: 44px;
+}
+
+.texto-acompanhe p {
+    font-size: 20px;
+    font-weight: var(--regular);
+    line-height: 30px;
+    color: var(--text-color);
+}
+
+.formulario {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.formulario input {
+    width: 360px;
+    border: .5px solid #D0D5DD;
+    padding: 12px 14px 12px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: var(--regular);
+    color: var(--text-color);
+    line-height: 24px;
+}
+
+.formulario .cadastro {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: var(--medium);
+    line-height: 24px;
+    border: none;
+}
+
+.formulario .cadastro:hover {
+    transition: .4s;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 16px;
+    line-height: 24px;
+    color: #98A2B3;
+}
